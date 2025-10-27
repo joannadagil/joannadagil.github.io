@@ -16,7 +16,7 @@ h1 {
 
 .intro {
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: auto;
   line-height: 1.6;
   background: #ffffff;
   padding: 25px;
@@ -28,7 +28,7 @@ h1 {
   column-count: 2;
   column-gap: 40px;
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: auto;
   background: #ffffff;
   padding: 25px;
   border-radius: 12px;
@@ -39,7 +39,7 @@ h1 {
   column-count: 3;
   column-gap: 30px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   background: #ffffff;
   padding: 25px;
   border-radius: 12px;
