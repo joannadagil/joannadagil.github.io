@@ -22,57 +22,52 @@ p {
   font-size: 1.1rem;
 }
 
-form {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 30px 40px;
-  width: 100%;
-  max-width: 500px;
-}
-
-label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 6px;
-}
-
-input[type="text"],
-input[type="date"],
-textarea,
-input[type="range"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-input[type="text"]:focus,
-input[type="date"]:focus,
-textarea:focus,
-input[type="range"]:focus {
-  border-color: #1565c0;
-  outline: none;
-}
-
-input[type="checkbox"] {
-  margin-right: 6px;
-}
-
-input[type="submit"] {
+button {
   background-color: #1565c0;
   color: white;
   border: none;
   padding: 12px 25px;
+  margin: 0px;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
-
-input[type="submit"]:hover {
+button:hover {
   background-color: #0d47a1;
-  transform: translateY(-3px);
+}
+.function-button {
+  background-color: rgb(88, 74, 58);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 0px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.function-button:hover {
+  background-color: rgb(63, 51, 38);
+}
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.full-width {
+  background-color: rgb(88, 74, 58);
+  grid-column: span 4;
+}
+.full-width:hover {
+  background-color: rgb(63, 51, 38);
+}
+.display {
+  grid-column: span 4;
+  background-color: #dfd4d4;
+  color: rgb(63, 51, 38);
+  font-size: 2em;
+  border: none;
+  padding: 30px;
+  border-radius: 8px;
 }
