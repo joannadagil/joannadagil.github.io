@@ -15,7 +15,7 @@ h1 {
 }
 
 .intro {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 40px;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -40,7 +40,7 @@ h1 {
 .three-columns {
   column-count: 3;
   column-gap: 30px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #e3f2fd;
   padding: 25px;
