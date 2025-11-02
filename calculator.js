@@ -22,7 +22,7 @@ function append_dot() {
   let i = display.value.length - 1;
 
   while (i >= 0) {
-    lastChar = display.value.slice(-i, -i + 1);
+    lastChar = display.value[i];
     if (lastChar == '.') {
       return;
     }
