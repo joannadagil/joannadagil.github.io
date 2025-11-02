@@ -6,7 +6,7 @@ function append(value) {
   // Handle operators
   if ('+-*/'.includes(value)) {
     if ('+-*/'.includes(lastChar) || display.value == '') {
-      //return; // prevent consecutive or starting operators
+      return; // prevent consecutive or starting operators
     } else {
       display.value += value;
     }
