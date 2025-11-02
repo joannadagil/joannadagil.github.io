@@ -19,9 +19,7 @@ function append_dot() {
     return;
   }
 
-  let i = display.value.length - 1;
-
-  while (i >= 0) {
+    for (let i = display.value.length - 1; i >= 0; i--) {
     lastChar = display.value[i];
     if (lastChar == '.') {
       return;
@@ -29,7 +27,6 @@ function append_dot() {
     if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/' || lastChar == '') {
       break;
     }
-    i--;
   }
   display.value += '.';
 }
