@@ -19,24 +19,19 @@ function append_dot() {
     return;
   }
 
-  let correct = true;
-  let i = 1;
+  let i = display.value.length - 1;
 
-  while (i <= display.value.length) {
+  while (i >= 0) {
     lastChar = display.value.slice(-i, -i + 1);
     if (lastChar == '.') {
-      correct = false;
-      break;
+      return;
     }
     if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/' || lastChar == '') {
       break;
     }
-    i++;
+    i--;
   }
-
-  if (correct) {
-    display.value += '.';
-  }
+  display.value += '.';
 }
 function append(value) {
   display.value += value;
