@@ -4,13 +4,13 @@ function append(value) {
   let lastChar = display.value.slice(-1);
 
   // Handle operators
-  if ('+-*/'.includes(value)) {
-    if ('+-*/'.includes(lastChar) || display.value == '') {
+  if (value=='+' || value=='-' || value=='*' || value=='/') {
+    if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/' || display.value == '') {
       return; // prevent consecutive or starting operators
     } else {
       display.value += value;
     }
-  } else if (value === '.') {
+  } else if (value == '.') {
     let correct = true;
     let i = -1;
 
