@@ -1,37 +1,40 @@
 const display = document.getElementById('display');
 
-function append(value) {
+function append_oper(value) {
+  if (display.value == '') {
+    if (value == '-') {
+      display.value += value;
+    } else { return; }
+  }
+
   let lastChar = display.value.slice(-1);
-
-  // Handle operators
-  if (value=='+' || value=='-' || value=='*' || value=='/') {
-    if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/') {        
-      return; // prevent consecutive or starting operators
-    } else {
-      display.value += value;
-    }
-  } else if (value == '.') {
-    let correct = true;
-    let i = -1;
-
-    while (Math.abs(i) <= display.value.length) {
-      lastChar = display.value.slice(i, i + 1);
-      if (lastChar == '.') {
-        correct = false;
-        break;
-      }
-      if ('+-*/'.includes(lastChar) || lastChar == '') {
-        break;
-      }
-      i--;
-    }
-
-    if (correct) {
-      display.value += value;
-    }
-  } else {
+  if (lastChar!='+' && lastChar!='-' && lastChar!='*' && lastChar!='/' && lastChar!='.') {        
     display.value += value;
   }
+}
+
+function append_dot() {
+  let correct = true;
+  let i = 1;
+
+  while (i <= display.value.length) {
+    let lastChar = display.value.slice(-i, -i + 1);
+    if (lastChar == '.') {
+      correct = false;
+      break;
+    }
+    if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/' || lastChar == '') {
+      break;
+    }
+    i++;
+  }
+
+  if (correct) {
+    display.value += '.';
+  }
+}
+function append(value) {
+  display.value += value;
 }
 
 function C() {
