@@ -6,13 +6,10 @@ function append(value) {
   // Handle operators
   if ('+-*/'.includes(value)) {
     if ('+-*/'.includes(lastChar) || display.value === '') {
-      return; // prevent consecutive or starting operators
+      //return; // prevent consecutive or starting operators
     }
     display.value += value;
-  } 
-
-  // Handle decimal point
-  else if (value === '.') {
+  } else if (value === '.') {
     let correct = true;
     let i = -1;
 
@@ -31,10 +28,7 @@ function append(value) {
     if (correct) {
       display.value += value;
     }
-  } 
-
-  // Handle numbers
-  else {
+  } else {
     display.value += value;
   }
 }
