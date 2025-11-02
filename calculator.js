@@ -7,8 +7,9 @@ function append(value) {
   if ('+-*/'.includes(value)) {
     if ('+-*/'.includes(lastChar) || display.value == '') {
       //return; // prevent consecutive or starting operators
+    } else {
+      display.value += value;
     }
-    display.value += value;
   } else if (value === '.') {
     let correct = true;
     let i = -1;
