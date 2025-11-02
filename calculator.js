@@ -5,7 +5,7 @@ function append(value) {
 
   // Handle operators
   if (value=='+' || value=='-' || value=='*' || value=='/') {
-    if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/' || display.value == '') {
+    if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/') {        
       return; // prevent consecutive or starting operators
     } else {
       display.value += value;
