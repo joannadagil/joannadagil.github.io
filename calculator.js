@@ -14,11 +14,16 @@ function append_oper(value) {
 }
 
 function append_dot() {
+  let lastChar = display.value.slice(-1);
+  if (lastChar=='+' || lastChar=='-' || lastChar=='*' || lastChar=='/' || lastChar == '' || lastChar == '.') {
+    return;
+  }
+
   let correct = true;
   let i = 1;
 
   while (i <= display.value.length) {
-    let lastChar = display.value.slice(-i, -i + 1);
+    lastChar = display.value.slice(-i, -i + 1);
     if (lastChar == '.') {
       correct = false;
       break;
