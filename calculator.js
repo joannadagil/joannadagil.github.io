@@ -12,18 +12,18 @@ function append(value) {
     }
   } else if (value === '.') {
     let correct = true;
-    let finished = false;
     let i = -1;
-    while (!finished) {
-      lastChar = display.value.slice(i, i+1);
+
+    while (Math.abs(i) <= display.value.length) {
+      lastChar = display.value.slice(i, i + 1);
       if (lastChar === '.') {
-        finished = true;
         correct = false;
+        break;
+      }
+      if ('+-*/'.includes(lastChar) || lastChar === '') {
+        break;
       }
       i--;
-      if ('+-*/'.includes(lastChar) || lastChar === '') {
-        finished = true;
-      }
     }
     if (correct) {
       display.value += value;
