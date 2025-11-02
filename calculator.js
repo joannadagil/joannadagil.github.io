@@ -5,7 +5,7 @@ function append(value) {
 
   // Handle operators
   if ('+-*/'.includes(value)) {
-    if ('+-*/'.includes(lastChar) || display.value === '') {
+    if ('+-*/'.includes(lastChar) || display.value == '') {
       //return; // prevent consecutive or starting operators
     }
     display.value += value;
@@ -15,11 +15,11 @@ function append(value) {
 
     while (Math.abs(i) <= display.value.length) {
       lastChar = display.value.slice(i, i + 1);
-      if (lastChar === '.') {
+      if (lastChar == '.') {
         correct = false;
         break;
       }
-      if ('+-*/'.includes(lastChar) || lastChar === '') {
+      if ('+-*/'.includes(lastChar) || lastChar == '') {
         break;
       }
       i--;
