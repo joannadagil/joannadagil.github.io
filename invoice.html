@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faktura VAT</title>
+  <link rel="stylesheet" href="invoice.css" />
+</head>
+<body>
+  <h1>Faktura VAT</h1>
+  <p>Uzupełnij dane faktury, dodaj usługi i zapisz ją do historii.</p>
+
+  <div class="invoice-card">
+    <div class="invoice-container">
+      <img src="fak.png" alt="Szablon faktury VAT" class="invoice-bg" />
+
+      <form id="invoice-form">
+        <div class="field field-seller">
+          <input type="text" id="seller" name="seller" />
+        </div>
+
+        <div class="field field-buyer">
+          <input type="text" id="buyer" name="buyer" />
+        </div>
+
+        <div class="field field-date">
+          <input type="date" id="date" name="date" />
+        </div>
+      </form>
+    </div>
+
+    <section class="services-section">
+      <h2>Usługi</h2>
+      <div class="service-form-row">
+        <input type="text" id="service-name" placeholder="Nazwa usługi" />
+        <input type="number" id="service-qty" placeholder="Ilość" min="1" step="1" />
+        <input type="number" id="service-price" placeholder="Cena netto" min="0" step="0.01" />
+        <button id="add-service" class="secondary-btn">Dodaj</button>
+      </div>
+
+      <table class="service-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Usługa</th>
+            <th>Ilość</th>
+            <th>Cena netto</th>
+            <th>Wartość</th>
+          </tr>
+        </thead>
+        <tbody id="service-list"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="sum-label">Suma netto</td>
+            <td id="total-netto">0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <button id="save-invoice" class="primary-btn">Zapisz fakturę do historii</button>
+    </section>
+  </div>
+
+  <section id="history-section">
+    <h2>Historia faktur</h2>
+    <div id="invoice-history"></div>
+  </section>
+
+  <script src="faktura.js"></script>
+</body>
+</html>
