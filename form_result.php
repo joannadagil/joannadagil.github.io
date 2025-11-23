@@ -1,5 +1,4 @@
 <?php
-// Dla bezpieczeństwa (żeby nie było ostrzeżeń, gdy ktoś wejdzie bez formularza)
 $fname    = $_POST['fname']    ?? '';
 $lname    = $_POST['lname']    ?? '';
 $birth    = $_POST['birth']    ?? '';
@@ -19,6 +18,7 @@ $no  = isset($_POST['no'])  ? 'no checked'  : 'no not checked';
 </head>
 <body>
 
+<form>
 <h1>Your data from the form</h1>
 
 <p><strong>First name:</strong> <?php echo htmlspecialchars($fname); ?></p>
@@ -36,7 +36,11 @@ $no  = isset($_POST['no'])  ? 'no checked'  : 'no not checked';
     <?php echo nl2br(htmlspecialchars($comments)); ?>
 </p>
 
-<a href="form.html">Back to form</a>
+<form action="form.html" method="get">
+    <input type="submit" value="Back to form">
+</form>
+
+</form>
 
 </body>
 </html>
