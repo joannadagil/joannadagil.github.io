@@ -13,32 +13,42 @@ $no  = isset($_POST['no'])  ? 'no checked'  : 'no not checked';
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Your data</title>
+    <title>Form results</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
 
 <form>
-<h1>Your data from the form</h1>
+<h1>results from form</h1>
 
-<p><strong>First name:</strong> <?php echo htmlspecialchars($fname); ?></p>
-<p><strong>Last name:</strong> <?php echo htmlspecialchars($lname); ?></p>
-<p><strong>Date of birth:</strong> <?php echo htmlspecialchars($birth); ?></p>
+<br>
 
-<p><strong>Yes / No:</strong><br>
+<label>First name:</label>
+<p> <?php echo htmlspecialchars($fname); ?></p>
+
+<label>Last name:</label>
+<p> <?php echo htmlspecialchars($lname); ?></p>
+
+<label>Date of birth: </label>
+<p><?php echo htmlspecialchars($birth); ?></p>
+
+
+<label>Yes / No:</label>
+<p>
     <?php echo htmlspecialchars($yes); ?><br>
     <?php echo htmlspecialchars($no); ?>
 </p>
 
-<p><strong>Mood (0–10):</strong> <?php echo htmlspecialchars($mood); ?></p>
 
-<p><strong>Additional comments:</strong><br>
+<label>How much (0-10):</label>
+<p> <?php echo htmlspecialchars($mood); ?></p>
+
+<label>Additional comments:</label>
+<p>
     <?php echo nl2br(htmlspecialchars($comments)); ?>
 </p>
 
-<form action="form.html" method="get">
-    <input type="submit" value="Back to form">
-</form>
+<a href="form.html">Back to form</a>
 
 </form>
 
