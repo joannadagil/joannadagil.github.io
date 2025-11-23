@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<h1>form</h1>
+
+<?php
+echo phpversion();
+?> 
+
+
+<p>fill in your data in the form below</p>
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="birth">Date of birth:</label><br>
+    <input type="date" id="birth" name="birth"><br><br>
+
+    <label for="yesno">Yes or no:</label><br>
+    <input type="checkbox" id="yes" name="yes">
+    <label for="yes"> yes</label><br>
+    <input type="checkbox" id="no" name="no">
+    <label for="no"> no</label><br><br>
+
+    <label for="mood">Choose how much (0 - very, 10 - not):</label><br>
+    <input type="range" id="mood" name="mood" min="0" max="10"><br><br>
+
+    <label for="comments">Anything else you'd like to share?</label><br>
+    <textarea id="comments" name="comments" rows="3" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -73,9 +73,6 @@ p {
 
 }
 
-.field input[type="text"] {
-  padding: 30px 8px;
-}
 
 /* Przybliżone pozycje na obrazku fak.png – można skorygować w razie potrzeby */
 .field-seller {
@@ -94,6 +91,12 @@ p {
   top: 190px;
   right: 40px;
   width: 180px;
+}
+
+.field-product {
+  top: 160px;
+  left: 60px;
+  width: 310px;
 }
 
 /* Sekcja usług */
@@ -233,7 +236,10 @@ button {
 
   .field-seller,
   .field-buyer,
-  .field-date {
+  .field-date,
+  .field-product
+  .field-amount,
+  .field-price {
     left: 10%;
     right: 10%;
     width: 80%;
