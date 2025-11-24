@@ -5,7 +5,6 @@ $birth    = $_POST['birth']    ?? '';
 $mood     = $_POST['mood']     ?? '';
 $comments = $_POST['comments'] ?? '';
 
-// Checkboxy – sprawdzamy, czy zostały zaznaczone
 $yes = isset($_POST['yes']) ? 'yes checked' : 'yes not checked';
 $no  = isset($_POST['no'])  ? 'no checked'  : 'no not checked';
 ?>
