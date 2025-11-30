@@ -48,7 +48,7 @@ if (isset($_GET['edit_id'])) {
     <input type="text" name="pesel" maxlength="11" value="<?= $edit_user['pesel'] ?>">
 
     <label>Data urodzenia:</label>
-    <input type="date" name="data_urodzenia" value="<?= $edit_user['data_urodzenia'] ?>">
+    <input type="date" name="data_urodzenia" value="<?= $edit_user['data_urodzenia'] ?>" required>
 
     <input type="submit" name="submit" value="<?= $edit_mode ? 'Zapisz zmiany' : 'Dodaj użytkownika' ?>">
 </form>
