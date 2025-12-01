@@ -87,14 +87,12 @@ input[type="submit"]:hover {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
   margin-right: 6px;
-}
-
-/* Edytuj */
-.btn {
   background-color: #1565c0;
+
 }
 
-.btn:hover {
+
+.action-btn:hover {
   background-color: #0d47a1;
   transform: translateY(-2px);
 }
