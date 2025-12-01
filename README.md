@@ -7,8 +7,33 @@ http://localhost/joannadagil.github.io/
 
 
 
+## lab01 - 10.10
+Pusta stronka html na jakimś serwerze. Z kodowaniem polskich znaków.
 
-## setup bazy danych
+## lab02 - 17.10
+Stronka z kolumnami w różnych ilościach, galerią zdjęć.
+
+## lab05 - 21.10
+
+
+## lab04 - 3.11
+Kalkulator w javascript z walidacją wpisywanych zapytań. Obsługiwanie *, /, +, -, ., = oraz C-wyczyść.
+
+## lab04 - 10.11
+XML - wypełnianie bloczka faktury (nazwa, ilość, kwota, suma) i w pętli dodawanie kolejnych faktur i sumowanie ich.
+
+## lab05 - 17.11
+Strona, kna którą za pomocą XLT będzie wyświetlany plik XML. Plik XML ma być gotowy już wcześniej, ma zawierać fakturę i dane do niej między dowolnymi znacznikami. Można dodać też Scheme, żeby była walidacja. 
+
+Druga opcja to zrobić formularz, który będzie zapisywał dane do XML i potem na podstronie wczytywał z tego XML przy użyciu XSL dane tej faktury.
+
+## lab06 - 24.11
+Korzystając ze strony z formularzem, używająć PHP, wyświetlić wprowadzone na niej dane na kolejnej podstronie
+
+## lab07 - 01.12
+Wyświetlanie tabeli z bazy danych z danymi użytkownika. Obsługiwanie dodawania nowych użytkowników, edycji istniejących i usuwania ich.
+
+### setup bazy danych
 
 mysql -u root -p
 
@@ -23,3 +48,10 @@ CREATE TABLE users (
     pesel VARCHAR(11),
     data_urodzenia DATE
 );
+
+## lab08 - 08.12
+
+
+
+
+
