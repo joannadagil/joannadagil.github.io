@@ -18,7 +18,7 @@ if (isset($_GET['edit_id'])) {
     if ($user) {
         $edit_user = $user;
 
-        // usuń rekord, żeby uniknąć duplikatu
+        // usunięcie rekordu
         $conn->query("DELETE FROM users WHERE id=$id");
     }
 }
