@@ -1,9 +1,6 @@
 # joannadagil.github.io
 
-XAMPP Control Panel -> Apache -> Start
-                    -> MySQL  -> Start
 
-http://localhost/joannadagil.github.io/
 
 
 
@@ -29,6 +26,11 @@ Druga opcja to zrobić formularz, który będzie zapisywał dane do XML i potem 
 
 ## lab06 - 24.11
 Korzystając ze strony z formularzem, używająć PHP, wyświetlić wprowadzone na niej dane na kolejnej podstronie
+
+XAMPP Control Panel -> Apache -> Start
+                    -> MySQL  -> Start
+
+http://localhost/joannadagil.github.io/
 
 ## lab07 - 01.12
 Wyświetlanie tabeli z bazy danych z danymi użytkownika. Obsługiwanie dodawania nowych użytkowników, edycji istniejących i usuwania ich.
