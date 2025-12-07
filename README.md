@@ -53,7 +53,20 @@ CREATE TABLE users (
 
 ## lab09 - 08.12
 
+### setup bazy danych
 
+mysql -u root -p
+
+USE users_db;
+
+CREATE TABLE auth_users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE,
+    password VARCHAR(255)
+);
+
+INSERT INTO auth_users (username, password)
+VALUES ('root', PASSWORD('root'));
 
 
 

@@ -1,4 +1,4 @@
-<?php include "db.php"; 
+<?php include "../db.php"; 
 
 $edit_mode = false;
 $edit_user = [
@@ -30,7 +30,7 @@ if (isset($_GET['edit_id'])) {
 <head>
 <meta charset="UTF-8">
 <title>Users</title>
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="../index.css">
 </head>
 <body>
 
