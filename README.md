@@ -65,8 +65,7 @@ CREATE TABLE auth_users (
     password VARCHAR(255)
 );
 
-INSERT INTO auth_users (username, password)
-VALUES ('root', PASSWORD('root'));
+SELECT * FROM auth_users;
 
 
 
