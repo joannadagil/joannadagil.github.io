@@ -18,13 +18,11 @@ Kalkulator w javascript z walidacją wpisywanych zapytań. Obsługiwanie *, /, +
 
 ## lab05 - 10.11
 XML - wypełnianie bloczka faktury (nazwa, ilość, kwota, suma) i w pętli dodawanie kolejnych faktur i sumowanie ich.
-
-## lab06 - 17.11
 Strona, kna którą za pomocą XLT będzie wyświetlany plik XML. Plik XML ma być gotowy już wcześniej, ma zawierać fakturę i dane do niej między dowolnymi znacznikami. Można dodać też Scheme, żeby była walidacja. 
 
 Druga opcja to zrobić formularz, który będzie zapisywał dane do XML i potem na podstronie wczytywał z tego XML przy użyciu XSL dane tej faktury.
 
-## lab07 - 24.11
+## lab06 - 24.11
 Korzystając ze strony z formularzem, używająć PHP, wyświetlić wprowadzone na niej dane na kolejnej podstronie
 
 XAMPP Control Panel -> Apache -> Start
@@ -32,7 +30,7 @@ XAMPP Control Panel -> Apache -> Start
 
 http://localhost/joannadagil.github.io/
 
-## lab08 - 01.12
+## lab07 - 01.12
 Wyświetlanie tabeli z bazy danych z danymi użytkownika. Obsługiwanie dodawania nowych użytkowników, edycji istniejących i usuwania ich.
 
 ### setup bazy danych
@@ -51,7 +49,7 @@ CREATE TABLE users (
     data_urodzenia DATE
 );
 
-## lab09 - 08.12
+## lab08 - 08.12
 
 ### setup bazy danych
 
@@ -66,6 +64,12 @@ CREATE TABLE auth_users (
 );
 
 SELECT * FROM auth_users;
+
+## lab09 - 12.01
+
+Web crawler z wybranej witryny, zapisac w XML/w bazie/w czymkolwiek chce i wyświetlić to na stronie http w html
+
+
 
 
 
